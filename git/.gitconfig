@@ -1,0 +1,12 @@
+[user]
+	name = PJ
+	email = paul@pauljequann.com
+[core]
+	editor = code --wait
+	autocrlf = input
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = "code --wait --diff $LOCAL $REMOTE"
+[init]
+	defaultBranch = main
