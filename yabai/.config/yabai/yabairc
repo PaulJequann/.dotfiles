@@ -40,6 +40,9 @@ yabai -m config left_padding                 20
 yabai -m config right_padding                20
 yabai -m config window_gap                   20
 
+#SPACEBAR_HEIGHT=$(spacebar -m config height)
+#yabai -m config external_bar all:$SPACEBAR_HEIGHT:0
+
 # My custom space names for my 3 monitor setup. These names are used in some of my scripts.
 yabai -m space 1 --label web
 yabai -m space 2 --label dev
@@ -60,7 +63,7 @@ yabai -m rule --add app="Fantastical" manage=off
 yabai -m rule --add app="Calendar" manage=off display=3
 yabai -m rule --add app="^Facetime$" manage=off display=3
 yabai -m rule --add app="^Music$" manage=off
-yabai -m rule --add app="^iTerm2$" manage=off display=2
+#yabai -m rule --add app="^iTerm2$" manage=off display=2
 yabai -m rule --add app="^Private Internet Access$" manage=off
 yabai -m rule --add app="^Mullvad VPN$" manage=off
 yabai -m rule --add app="Discord" space=social
