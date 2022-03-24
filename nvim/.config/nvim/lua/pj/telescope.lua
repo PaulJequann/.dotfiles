@@ -2,15 +2,9 @@ local telescope = require('telescope')
 local actions = require('telescope.actions')
 
 telescope.setup {
-    extensions = {
-        fzy_native = {
-            override_generic_sorter = false,
-            overide_file_sorter = true,
-        }
-    },
     defaults = {
-        color_devicons = false,
-        prompt_prefix = "$ ",
+        color_devicons = true,
+        prompt_prefix = "❯ ",
         file_ignore_patterns = {
             "^.git/",
             "node_modules",
@@ -19,6 +13,12 @@ telescope.setup {
             i = {
                 ['<esc>'] = actions.close
             }
+        }
+    },
+    extensions = {
+        fzy_native = {
+            override_generic_sorter = false,
+            overide_file_sorter = true,
         }
     }
 }
