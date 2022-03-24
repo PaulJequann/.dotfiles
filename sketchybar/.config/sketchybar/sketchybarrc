@@ -68,7 +68,7 @@ sketchybar -m --add space space4 left                              \
 sketchybar -m --default label.padding_left=2  \
                         icon.padding_right=2  \
                         icon.padding_left=6   \
-                        label.padding_right=6
+                        label.padding_right=6 \
 
 
 ############## LEFT ITEMS ############## 
@@ -101,6 +101,19 @@ sketchybar -m --add item sound right     \
               icon.color=0xffd08770      \
               script="~/.config/sketchybar/plugins/volume.sh"\
 
+sketchybar -m --add item ram_label right \
+              --set ram_label label.font="JetBrainsMono Nerd Font:Bold:10.0" \
+                               label=RAM \
+                               y_offset=6 \
+                               width=0 \
+\
+              --add item ram_percentage right \
+              --set ram_percentage label.font="JetBrainsMono Nerd Font:Bold:10.0" \
+                                    y_offset=-4 \
+                                    update_freq=1 \
+                                    script="~/.config/sketchybar/plugins/ram.sh"\
+
+c
 sketchybar -m --add item btc right \
               --set btc icon= \
               --set btc update_freq=60 \

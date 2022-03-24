@@ -20,7 +20,7 @@
 ## HYPER == SHIFT + CMD + ALT + OPTION
 
 ## open terminal
-alt + shift - return : /Applications/iTerm.app/Contents/MacOS/iTerm2
+alt + shift - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
 
 ## Quickly restart the yabai launch agent
 ctrl + alt + shift - r : \

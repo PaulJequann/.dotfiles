@@ -63,7 +63,6 @@ yabai -m rule --add app="Fantastical" manage=off
 yabai -m rule --add app="Calendar" manage=off display=3
 yabai -m rule --add app="^Facetime$" manage=off display=3
 yabai -m rule --add app="^Music$" manage=off
-#yabai -m rule --add app="^iTerm2$" manage=off display=2
 yabai -m rule --add app="^Private Internet Access$" manage=off
 yabai -m rule --add app="^Mullvad VPN$" manage=off
 yabai -m rule --add app="Discord" space=social

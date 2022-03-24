@@ -40,7 +40,7 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'windwp/nvim-autopairs' "conf in lsp file
 Plug 'steelsojka/pears.nvim'
 " -- Theme
-Plug 'marko-cerovac/material.nvim'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 " Snippets
 Plug 'L3MON4D3/LuaSnip'
@@ -52,5 +52,4 @@ call plug#end()
 " require plugin configs
 lua require('pj')
 
-let g:material_style = "deep ocean"
-colorscheme material
+colorscheme tokyonight
