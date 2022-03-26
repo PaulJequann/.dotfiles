@@ -39,7 +39,9 @@ if command -v pyenv-virtualenv &>/dev/null; then
     eval "$(pyenv virtualenv-init -)"
 fi
 
+bindkey -s ^f "tmux-sessionizer\n"
+
 # Alias
-alias gam="/Users/pj/dev/sylvan/gam/gamadv-xtd3/gam"
+alias gam="/Users/pj/dev/work/sylvan/gam/gamadv-xtd3/gam"
 alias vim='nvim'
 alias ls='ls -la'

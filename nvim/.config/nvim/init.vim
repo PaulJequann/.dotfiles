@@ -1,9 +1,9 @@
 let mapleader = " "
+set guicursor=
 set tabstop=3 softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
-set nu
 set number
 set numberwidth=4
 set relativenumber
@@ -51,5 +51,8 @@ call plug#end()
 
 " require plugin configs
 lua require('pj')
+
+" --- Key Maps
+nnoremap <silent> <C-f> :silent !tmux neww tmux-sessionizer<CR>
 
 colorscheme tokyonight
