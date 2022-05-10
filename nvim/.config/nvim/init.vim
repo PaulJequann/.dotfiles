@@ -46,6 +46,7 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'onsails/lspkind-nvim'
+Plug 'numToStr/Comment.nvim'
 
 call plug#end()
 
