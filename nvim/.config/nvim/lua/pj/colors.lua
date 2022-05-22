@@ -1,7 +1,7 @@
 vim.g.tokyonight_style = "night"
-vim.g.tokyonight_italic_functions = true
 vim.g.tokyonight_transparent_sidebar = true
 vim.g.tokyonight_transparent = true
+vim.cmd[[colorscheme tokyonight]]
 
 require'nvim-web-devicons'.setup {
  -- your personnal icons can go here (to override)
