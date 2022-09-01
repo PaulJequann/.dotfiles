@@ -71,8 +71,6 @@ colors:
     - { index: 17, color: '0xdb4b4b' }
     
 shell:
-  program: /bin/zsh
+  program: /opt/homebrew/bin/tmux
   args:
-    - -l
-    - -c
-    - "tmux attach || tmux"
+    - attach
