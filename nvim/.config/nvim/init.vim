@@ -1,23 +1,4 @@
 let mapleader = " "
-" set guicursor=
-set tabstop=3 softtabstop=4
-set shiftwidth=4
-set expandtab
-set smartindent
-set number
-set numberwidth=4
-set relativenumber
-set nohlsearch
-set hidden
-set noerrorbells
-set incsearch
-set scrolloff=8
-set signcolumn=yes
-set splitbelow
-set splitright
-set ignorecase
-set smartcase
-set termguicolors
 " --- Plugins
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
