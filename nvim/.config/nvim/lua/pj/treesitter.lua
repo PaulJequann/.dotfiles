@@ -1,18 +1,10 @@
-local configs = require('nvim-treesitter.configs')
+local treesitter = require('nvim-treesitter.configs')
 
-configs.setup {
-    autopairs = {
-        enable = true,
-    },
+treesitter.setup {
     highlight = {
         enable = true,
-        additional_vim_regex_highlighting = true,
     },
     indent = {
         enable = true,
     },
-    context_commentstring = {
-        enable = true,
-        -- enable_autocmd = false,
-    }
 }

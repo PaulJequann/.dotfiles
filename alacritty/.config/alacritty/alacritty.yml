@@ -8,7 +8,7 @@ window:
     y: 0
 
   padding:
-    x: 15
+    x: 35
     y: 35 
 
   dynamic_title: false
@@ -22,9 +22,9 @@ scrolling:
 
 font:
   normal:
-    family: JetBrainsMono Nerd Font
+    family: FiraCode Nerd Font 
 
-  size: 16.0
+  size: 15.0
 
   offset:
     x: 0
@@ -35,7 +35,6 @@ font:
     y: 0
 
 draw_bold_text_with_bright_colors: true
-
 
   # TokyoNight Alacritty Colors
 colors:

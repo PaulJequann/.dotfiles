@@ -1,7 +1,7 @@
 require('lualine').setup {
     options = {
         icons_enabled = true,
-        theme = 'auto',
+        theme = 'tokyonight',
         disabled_filetypes = {'NvimTree'}
     },
     sections = {
