@@ -9,7 +9,6 @@ endif
 
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
-Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
@@ -19,9 +18,13 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'RRethy/vim-illuminate'
 Plug 'lukas-reineke/indent-blankline.nvim'
 
+" -- lsp
+Plug 'neovim/nvim-lspconfig'
+Plug 'jose-elias-alvarez/null-ls.nvim'
+Plug 'hrsh7th/cmp-nvim-lsp'
+
 " -- cmp plugins
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
