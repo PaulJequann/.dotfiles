@@ -65,6 +65,7 @@ yabai -m rule --add app="^Facetime$" manage=off display=1
 yabai -m rule --add app="^Music$" manage=off
 yabai -m rule --add app="^Private Internet Access$" manage=off
 yabai -m rule --add app="^Mullvad VPN$" manage=off
+yabai -m rule --add app="^Microsoft Remote Desktop$" sticky=on layer=above manage=off display=4
 yabai -m rule --add app="^Discord$" sticky=on space=social
 yabai -m rule --add app="^Messages$" sticky=on space=social
 yabai -m rule --add app="^Safari$" space=web

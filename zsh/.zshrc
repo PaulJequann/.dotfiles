@@ -42,6 +42,7 @@ fi
 bindkey -s ^f "tmux-sessionizer\n"
 
 # Alias
-alias gam="/Users/pj/dev/work/sylvan/gam/gamadv-xtd3/gam"
 alias vim='nvim'
 alias ls='ls -la'
+
+alias gam="/Users/pj/bin/gamadv-xtd3/gam"
