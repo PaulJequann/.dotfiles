@@ -42,13 +42,10 @@ yabai -m config window_gap                   20
 #yabai -m config external_bar all:$SPACEBAR_HEIGHT:0
 
 # My custom space names for my 3 monitor setup. These names are used in some of my scripts.
-yabai -m space 1 --label main
-yabai -m space 2 --label work
+yabai -m space 1 --label web
+yabai -m space 2 --label dev
 yabai -m space 3 --label social
-yabai -m space 4 --label dev
-yabai -m space 5 --label five
-yabai -m space 6 --label six
-yabai -m space 9 --label nine
+yabai -m space 4 --label work
 
 # float system preferences. Most of these just diable Yabai form resizing them.
 yabai -m rule --add app="^System Preferences$" sticky=on layer=above manage=off
@@ -56,16 +53,16 @@ yabai -m rule --add app="^Finder$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Disk Utility$" sticky=on layer=above manage=off
 yabai -m rule --add app="^System Information$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Activity Monitor$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Alacritty$" sticky=on layer=above manage=off display=2
-yabai -m rule --add app="^Visual Studio Code$" sticky=on display=2
+yabai -m rule --add app="Alacritty" sticky=on layer=above space=dev
+yabai -m rule --add app="^Visual Studio Code$" sticky=on space=dev
 yabai -m rule --add app="^Calculator$" sticky=on layer=above manage=off
 yabai -m rule --add app="Fantastical" manage=off
 yabai -m rule --add app="Calendar" manage=off display=1
-yabai -m rule --add app="^Facetime$" manage=off display=1
+yabai -m rule --add app="Facetime$" manage=off display=1
 yabai -m rule --add app="^Music$" manage=off
-yabai -m rule --add app="^Private Internet Access$" manage=off
-yabai -m rule --add app="^Mullvad VPN$" manage=off
-yabai -m rule --add app="^Microsoft Remote Desktop$" sticky=on layer=above manage=off display=4
+yabai -m rule --add app="Private Internet Access" manage=off
+yabai -m rule --add app="Mullvad VPN" manage=off
+yabai -m rule --add app="Microsoft Remote Desktop" sticky=on layer=above manage=off space=4
 yabai -m rule --add app="^Discord$" sticky=on space=social
 yabai -m rule --add app="^Messages$" sticky=on space=social
 yabai -m rule --add app="^Safari$" space=web
