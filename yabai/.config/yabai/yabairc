@@ -55,6 +55,7 @@ yabai -m rule --add app="^System Information$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Activity Monitor$" sticky=on layer=above manage=off
 yabai -m rule --add app="Alacritty" sticky=on layer=above space=dev
 yabai -m rule --add app="^Visual Studio Code$" sticky=on space=dev
+yabai -m rule --add app="Docker Desktop" sticky=on layer=above manage=off space=dev
 yabai -m rule --add app="^Calculator$" sticky=on layer=above manage=off
 yabai -m rule --add app="Fantastical" manage=off
 yabai -m rule --add app="Calendar" manage=off display=1
