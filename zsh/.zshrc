@@ -46,3 +46,5 @@ alias vim='nvim'
 alias ls='ls -la'
 
 alias gam="/Users/pj/bin/gamadv-xtd3/gam"
+
+export SOPS_AGE_KEY_FILE=~/.config/sops/age/keys.txt
