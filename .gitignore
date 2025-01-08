@@ -1,3 +1,5 @@
 bin/.local/share
 bin/.local/state/nvim/
 bin/.local/state/nvim/shada/main.shada
+
+.DS_Store
