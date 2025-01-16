@@ -86,7 +86,7 @@ window#waybar.hidden {
 #custom-weather.default {
   background-color: #222222;
   /* border-radius: 14px; */
-  padding: 0 10px;
+  padding: 0 6px;
 }
 
 #custom-screenshot_t {
@@ -99,10 +99,6 @@ window#waybar.hidden {
   background-color: #222222;
   border-radius: 14px;
   padding: 3px 12px;
-}
-
-#cpu {
-  color: #fb958b;
 }
 
 #custom-storage {
