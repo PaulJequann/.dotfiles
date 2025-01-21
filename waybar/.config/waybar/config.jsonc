@@ -30,6 +30,7 @@
   "modules-right": [
     // "backlight",
     // "custom/storage",
+    "bluetooth",
     "wireplumber",
     "memory",
     "temperature",
@@ -365,5 +366,28 @@
   "tray": {
     "icon-size": 15,
     "spacing": 15
+  },
+
+  "bluetooth": {
+    // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+    "on-click": "blueberry",
+    "format": "{status} ",
+    "format-disabled": "", // an empty format will hide the module
+    "format-connected": "{num_connections} ",
+    "format-off": "",
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_battery_percentage}"
   }
+
+  // "bluetooth": {
+  //   "format": " {status}",
+  //   "format-connected": " {device_alias}",
+  //   "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+  //   // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+  //   "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+  //   "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+  //   "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+  //   "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+  // }
 }
