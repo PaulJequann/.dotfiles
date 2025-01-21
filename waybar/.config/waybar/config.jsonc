@@ -32,6 +32,7 @@
     // "custom/storage",
     "bluetooth",
     "wireplumber",
+    "custom/mouse",
     "memory",
     "temperature",
     "custom/pacman",
@@ -167,6 +168,17 @@
     //"return-type": "json",
     //"exec": "~/.config/waybar/modules/weather.sh",
     "exec-if": "ping wttr.in -c1"
+  },
+  // Requires openrazer to be installed on the system
+  "custom/mouse": {
+    "format": "{}% 󰍽",
+    // "format-alt": "{alt}: {}",
+    // "format-alt-click": "click-right",
+    "interval": 300,
+    "tooltip": true,
+    "return-type": "json",
+    "exec": "~/.config/waybar/modules/razer_mouse_info.sh",
+    "on-click": "razergenie"
   },
   "custom/pacman": {
     "format": "{} ",
