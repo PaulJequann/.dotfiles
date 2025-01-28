@@ -174,11 +174,12 @@
     "format": "{}% 󰍽",
     // "format-alt": "{alt}: {}",
     // "format-alt-click": "click-right",
-    "interval": 300,
+    "interval": 60,
     "tooltip": true,
     "return-type": "json",
     "exec": "~/.config/waybar/modules/razer_mouse_info.sh",
-    "on-click": "razergenie"
+    "on-click": "razergenie",
+    "on-click-right": "sudo ~/.config/waybar/scripts/toggle_poll_rate.sh"
   },
   "custom/pacman": {
     "format": "{} ",
