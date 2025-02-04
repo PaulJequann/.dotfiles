@@ -42,7 +42,7 @@ set_regular_mode() {
 
 # Check current mode
 # if hyprctl monitors | grep -q "2560x1440@360"; then
-if hyprctl monitors | grep "DP-1" | grep -q "2560x1440@360.00"; then
+if ! hyprctl monitors | grep "HDMI-A-1"; then
     # Currently in gaming mode, switch to regular mode
     echo "Currently in gaming mode, switch to regular mode"
     set_regular_mode
