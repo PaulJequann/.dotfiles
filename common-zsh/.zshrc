@@ -1,8 +1,9 @@
 # =============================================================================
 # PATH Configuration (MUST BE FIRST)
 # =============================================================================
-# Essential PATH for device_configs tools (task, claude, bd, etc.)
-export PATH="$HOME/.local/bin:$PATH"           # User binaries
+# Essential PATH for device_configs tools (task, claude, bd, opencode, etc.)
+export PATH="$HOME/.local/bin:$PATH"           # User binaries (task, claude, bd)
+export PATH="$HOME/.opencode/bin:$PATH"        # opencode
 export PATH="/usr/local/bin:$PATH"             # System-wide custom binaries
 
 # Platform-specific PATH
