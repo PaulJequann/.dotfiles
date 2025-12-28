@@ -10,3 +10,6 @@
 	cmd = "code --wait --diff $LOCAL $REMOTE"
 [init]
 	defaultBranch = main
+[include]
+	# Platform-specific credential helpers
+	path = ~/.gitconfig.d/credentials
