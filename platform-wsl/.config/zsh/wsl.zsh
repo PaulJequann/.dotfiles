@@ -14,3 +14,8 @@ fi
 
 # WSL-specific paths
 export PATH="$PATH:/mnt/c/Windows/System32"
+
+# GAM7 (Google Workspace Admin)
+# Override oh-my-zsh git plugin's 'gam' alias (git am)
+unalias gam 2>/dev/null
+export PATH="$HOME/bin/gam7:$PATH"
