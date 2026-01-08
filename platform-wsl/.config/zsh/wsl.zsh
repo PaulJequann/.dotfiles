@@ -19,3 +19,6 @@ export PATH="$PATH:/mnt/c/Windows/System32"
 # Override oh-my-zsh git plugin's 'gam' alias (git am)
 unalias gam 2>/dev/null
 export PATH="$HOME/bin/gam7:$PATH"
+
+export WINDOWS_HOST_IP=$(ip route | grep default | awk '{print $3}')
+export LOCAL_OLLAMA_URL="http://${WINDOWS_HOST_IP}:11434/v1"
